@@ -1,0 +1,764 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+    <link rel="icon" href="img/popcorn.png" type="image/x-icon">
+    <title>MovieLand</title>
+</head>
+
+<body>
+    <!--HEADER-->
+    <header>
+        <h1 style="padding: 16px;">Movie<span id="land">Land</span></h1>
+        <nav>
+            <ul>
+                <a href="#accion" class="btn2"><li>Acción <img src="img/machine-gun.png" width="33" height="26"> </li></a>
+                <a href="#aventura" class="btn2"><li>Aventura <img src="img/adventurer.png" width="33" height="26"> </li></a>
+                <a href="#scifi" class="btn2"><li>Sci-Fi <img src="img/ufo.png" width="30" height="26"> </li></a>
+                <a href="#drama" class="btn2"><li>Drama <img src="img/drama.png" width="30" height="26"> </li></a>
+                <a href="#fantasia" class="btn2"><li>Fantasía <img src="img/unicorn.png" width="29" height="27"> </li></a>
+                <a href="#espacio" class="btn2"><li>Espacio <img src="img/saturn.png" width="33" height="27"> </li></a>
+                <a href="#terror" class="btn2"><li>Terror <img src="img/spooky.png" width="33" height="26"> </li></a>
+                <a href="#romance" class="btn2"><li>Romance <img src="img/love-and-romance.png" width="31" height="26"> </li></a>
+            </ul>
+        </nav>
+    </header>
+
+    <!--CUERPO-->
+    <div class="cartelera">
+        <h3>Cartelera Actual</h3>
+            <div class="descripciones">
+                <button class="btn" id="show">Ver Info</button>
+                <button class="btn" id="hide">Ocultar</button>
+            </div>
+            <div class="grid">
+                <div class="pelicula" style="padding:10px;">
+                    <img src="img/jurassic.jpg">
+                    <h4>Jurassic World 3</h4>
+                    <p class="div1" style="display: none;">La isla Nublar y su parque han sido destruidos, pero el problema no se terminó. Con los dinosaurios dispersos por todo el mundo.</p>
+                    <h5><img src="img/favorito.png" style="width:17px; height:17px;padding-top: 5px;"> Valoración: 7.9</h5>
+                </div>
+                <div class="pelicula" style="padding:10px;">
+                    <img src="img/topgun.jpg">
+                    <h4>Top Gun: Maverick</h4>
+                    <p class="div2" style="display: none;">Maverick es ahora instructor de pilotos. Una última misión, lo obliga a enfrentar las heridas del pasado.</p>
+                    <h5><img src="img/favorito.png" style="width:17px; height:17px;padding-top: 5px;"> Valoración: 8.5</h5>
+                </div>
+                <div class="pelicula" style="padding:10px;">
+                    <img src="img/strange.webp">
+                    <h4>Doctor Strange</h4>
+                    <p class="div3" style="display: none;">El Dr. Stephen Strange abre un portal al multiverso al utilizar un hechizo prohibido. Ahora su equipo debe enfrentarse a una amenaza enorme.</p>
+                    <h5><img src="img/favorito.png" style="width:17px; height:17px;padding-top: 5px;"> Valoración: 8.2</h5>
+                </div>
+                <div class="pelicula" style="padding:10px;">
+                    <img src="img/sonic.jpg">
+                    <h4>Sonic 2</h4>
+                    <p class="div4" style="display: none;">Sonic quiere demostrar que tiene madera de héroe. La prueba de fuego llega con el retorno del malvado Robotnik en busca de una esmeralda que destruye ciudades.</p>
+                    <h5><img src="img/favorito.png" style="width:17px; height:17px;padding-top: 5px;"> Valoración: 7.7</h5>
+                </div>
+                <div class="pelicula" style="padding:10px;">
+                    <img src="img/north.jpg">
+                    <h4>The Northman</h4>
+                    <p class="div5" style="display: none;">El príncipe Amleth está a punto de convertirse en hombre pero, en ese momento, su tío asesina brutalmente a su padre y secuestra a la madre del niño.</p>
+                    <h5><img src="img/favorito.png" style="width:17px; height:17px;padding-top: 5px;"> Valoración: 8.6</h5>
+                </div>
+                <div class="pelicula" style="padding:10px;">
+                    <img src="img/anim.jpg">
+                    <h4>Animales Fantásticos</h4>
+                    <p class="div6" style="display: none;">Ante una severa amenaza, el magizoólogo Newt Scamander lidera a un valiente que busca detener al malvado Gellert Grindelwald.</p>
+                    <h5><img src="img/favorito.png" style="width:17px; height:17px;padding-top: 5px;"> Valoración: 8.2</h5>
+                </div>
+                    <div class="pelicula" style="padding:10px;">
+                    <img src="img/ciudad.webp">
+                    <h4>La Ciudad Perdida</h4>
+                    <p class="div7" style="display: none;">La escritora Loretta Sage escribe sobre lugares exóticos en sus novelas de aventuras con un atractivo modelo de portada, Alan. </p>
+                    <h5><img src="img/favorito.png" style="width:17px; height:17px;padding-top: 5px;"> Valoración: 7.5</h5>
+                </div>
+                <div class="pelicula" style="padding:10px;">
+                    <img src="img/morbius.jpg">
+                    <h4>Morbius</h4>
+                    <p class="div8" style="display: none;"> Morbius, un doctor que tras sufrir una compleja enfermedad en la sangre y fallar al intentar curarse, se convirtió en un poderoso vampiro.</p>
+                    <h5><img src="img/favorito.png" style="width:17px; height:17px;padding-top: 5px;"> Valoración: 7.1</h5>
+                </div>
+                <div class="pelicula" style="padding:10px;">
+                    <img src="img/lightyear.jpg">
+                    <h4>Lightyear</h4>
+                    <p class="div9" style="display: none;">El legendario Buzz Lightyear se embarca en una aventura intergaláctica con un grupo de reclutas ambiciosos y su compañero robot.</p>
+                    <h5><img src="img/favorito.png" style="width:17px; height:17px;padding-top: 5px;"> Valoración: 7.7</h5>
+                </div>
+                <div class="pelicula" style="padding:10px;">
+                    <img src="img/tiposmalos.jpg">
+                    <h4>Los Tipos Malos</h4>
+                    <p class="div10" style="display: none;">El señor Lobo, el señor Serpiente, el señor Piraña y la señorita Tarántula tienen que fingir que son chicos buenos para evitar problemas. </p>
+                    <h5><img src="img/favorito.png" style="width:17px; height:17px;padding-top: 5px;"> Valoración: 7.6</h5>
+                </div>
+            </div>
+    </div>
+
+    <!--Géneros-->
+    <div class="generos">
+        <h1>Géneros</h1>
+
+        <div id="accion" class="genero">
+            <h2>Acción <img style="width:52px; height:40px" src="img/machine-gun.png"></h2>
+            <div id="img1" class="movie">
+                <img src="img/oldboy.jpg" style="width: 180px; height: 230px;">
+                <div>
+                    <h3>Oldboy </h3>
+                    <h4>2003</h4>
+                    <h5>Después de una borrachera que termina en la cárcel, el locuaz y charlatán Oh Dae-su ha sido secuestrado. De pronto aparecerá en una especie de cuarto de hotel sólo con una televisión, en el que le dan de comer y cada noche le gasean con somnífero, con lo que se queda dormido. A veces pregunta, grita y maldice porque no sabe los motivos de su encierro. Sin embargo, a poco más de un año de su secuestro, se entera por la televisión de que es el principal sospechoso del asesinato de su esposa. Según la policía, sus huellas estaban en diversos objetos del lugar del crimen.</h5>
+                    <h5><img src="img/favorito.png" style="width:17px; height:17px;padding-top: 5px;"> Valoración: 8.4</img>
+                </div>
+            </div>
+            <div id="img2" class="movie">
+                <img src="img/robocop.jpg" style="width: 180px; height: 230px;">
+                <div>
+                    <h3>Robocop </h3>
+                    <h4>1987</h4>
+                    <h5>En un futuro cercano distópico, Detroit está al borde del colapso social y financiero. Abrumada por el crimen y la disminución de los recursos, la ciudad otorga a la corporación Omni Consumer Products (OCP) el control de la fuerza policial de Detroit. El vicepresidente de la OCP, Dick Jones, demuestra el ED-209, un robot de aplicación de la ley diseñado para suplantar a la policía. El ED-209 funciona mal y mata a un ejecutivo, lo que permite al ambicioso Bob Morton presentar al presidente de la compañía («El viejo») su propio proyecto: RoboCop.</h5>
+                    <h5><img src="img/favorito.png" style="width:17px; height:17px;padding-top: 5px;"> Valoración: 8.2</h5>
+                </div>
+            </div>
+            <div id="img3" class="movie">
+                <img src="img/johnwick.webp" style="width: 180px; height: 230px;">
+                <div>
+                    <h3>John Wick </h3>
+                    <h4>2014</h4>
+                    <h5>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto quis vero perferendis rem, quidem quod eligendi, qui id labore, perspiciatis facere ullam est ad eius? Vel explicabo eligendi, voluptate iure quaerat, provident, sed aut tenetur non autem inventore quae beatae optio rem nostrum quis dolorum voluptatem odio earum voluptatibus fuga nulla culpa! Necessitatibus fugit, consequatur unde laborum hic nobis ratione consectetur maiores quibusdam voluptatem! Est neque perferendis fuga dolore iure qui non fugit quis vero, eaque laborum, inventore, quam ad. Illo, minima. Architecto maxime iure praesentium illo! Eaque dolores recusandae asperiores obcaecati pariatur ab molestiae aspernatur eum, accusamus totam vel?</p>
+                    <h5><img src="img/favorito.png" style="width:17px; height:17px;padding-top: 5px;"> Valoración: 8.6</h5>
+                </div>
+            </div>
+            <button id="ver1" class="btn">Ver Más</button>
+            <button id="esconder1" class="btn">Ver Menos</button>
+            <div id="hide1" style="display: none;">
+                <div class="movie">
+                    <img src="img/hero.jpg" style="width: 180px; height: 230px;">
+                    <div>
+                        <h3>Hero</h3>
+                        <h4>2002</h4>
+                        <h5>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias, harum voluptates labore laboriosam maxime vel dolor dolorem cum unde nulla repellendus incidunt ipsam autem soluta libero non veritatis ducimus accusantium alias dolore consequuntur neque. Expedita tempore dolores similique quidem quam sequi voluptatibus velit, quos et libero veniam omnis aut nisi? Repellendus, aperiam quos neque similique cum, reiciendis inventore vel excepturi in esse fugiat? Saepe nostrum suscipit optio? Repellendus dicta provident eligendi est rem nemo, quas quis voluptates quasi, commodi odit fugit illo aperiam atque deserunt reiciendis fuga amet quae dignissimos perferendis delectus a animi dolorem assumenda. Explicabo aliquid nulla deserunt?</h5>
+                        <h5><img src="img/favorito.png" style="width:17px; height:17px;padding-top: 5px;"> Valoración: 8.4</h5>
+                    </div>
+                </div>
+                <div class="movie">
+                    <img  src="img/faf.jpg" style="width: 180px; height: 230px;">
+                    <div>
+                        <h3>Fast and Furious 7</h3>
+                        <h4>2015</h4>
+                        <h5>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellendus fuga dolore repellat totam voluptate architecto maiores voluptatibus beatae commodi unde error dolor facilis, rem amet quam earum explicabo sit voluptates esse aut, ratione assumenda qui. Reiciendis sequi molestiae quaerat nisi dicta rerum sint, ea recusandae eveniet velit eos praesentium accusantium optio maxime quibusdam nulla minima ducimus sed. Voluptatem odio et quia facilis eos magni eveniet quas vel, enim delectus adipisci ab officia ad numquam ipsam veniam aliquid illo commodi ex nobis tempora nihil! Nisi ipsum aperiam, est minima ratione pariatur commodi nemo architecto excepturi dolor. Eveniet cum quaerat reiciendis id.</p>
+                        <h5><img src="img/favorito.png" style="width:17px; height:17px;padding-top: 5px;"> Valoración: 8.5</h5>
+                    </div>
+                </div>
+                <div class="movie">
+                    <img  src="img/matrix.jpg" style="width: 180px; height: 230px;">
+                    <div>
+                        <h3>Matrix</h3>
+                        <h4>1999</h4>
+                        <h5>Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa harum facere amet maxime nihil numquam, rerum, quia repudiandae nostrum repellendus, dolorum tenetur sed expedita. Ab quibusdam, dolorem commodi illo totam reprehenderit illum temporibus maiores quo! Voluptatibus illo commodi optio nesciunt totam delectus molestias qui minus ab nemo omnis iure doloremque officiis porro, vel nobis repudiandae! Doloribus iusto nihil ipsum cumque consequatur ullam voluptas, modi eos reiciendis provident eius tempore libero sit ratione alias in, eaque assumenda incidunt, adipisci odit accusamus architecto dignissimos placeat veniam? Consequatur necessitatibus est repellendus cum aperiam nam accusantium tempora libero, doloremque molestias neque dolor incidunt nesciunt.</p>
+                        <h5><img src="img/favorito.png" style="width:17px; height:17px;padding-top: 5px;"> Valoración: 9.1</h5>
+                    </div>
+                </div>
+                <div class="movie">
+                    <img  src="img/depredador.jpg" style="width: 180px; height: 230px;">
+                    <div>
+                        <h3>Depredador</h3>
+                        <h4>1987</h4>
+                        <h5>La película comienza mostrando una nave espacial acercándose a la Tierra. A continuación la acción se traslada a la costa de Guatemala donde un grupo de fuerzas especiales estadounidense comandado por el Delta Force y veterano de la Guerra de Vietnam Mayor Alan "Dutch" Schaeffer (Arnold Schwarzenegger) es enviado a rescatar a un ministro del gabinete presidencial secuestrado por un grupo guerrillero. Dutch junto con un antiguo compañero de las Fuerzas Especiales del Ejército de Estados Unidos, actualmente perteneciente a la División de Actividades Especiales de la Agencia Central de Inteligencia, llamado George Dillon (Carl Weathers) y el resto de los cinco componentes del equipo, son transportados en helicóptero a la jungla.</p>
+                        <h5><img src="img/favorito.png" style="width:17px; height:17px;padding-top: 5px;"> Valoración: 8.7</h5>
+                    </div>
+                </div>
+                <div class="movie">
+                    <img src="img/13.jpg" style="width: 180px; height: 230px;">
+                    <div>
+                        <h3>13 Asesinos</h3>
+                        <h4>2010</h4>
+                        <h5>La película esta ubicada en el año 1844 del Japón feudal, cuando el shogunato Tokugawa está en declive, y el señor Matsudaira Naritsugu de Akashi viola, tortura y asesina a sus ciudadanos a voluntad. Él está protegido por el Shogun, ya que es su medio hermano. El señor Doi Toshitsura, la Justicia del Shogun, se da cuenta de que la situación se intensificará después de que Naritsugu ascienda a una posición política más alta. Después de que un perjudicado noble cometa harakiri como una forma de mostrar desprecio hacia Naritsugu, Doi busca al samurái de su mayor de confianza, Shimada Shinzaemon, quien sirvió bajo el antiguo shogun, y secretamente lo contrata para asesinar a Naritsugu.</p>
+                        <h5><img src="img/favorito.png" style="width:17px; height:17px;padding-top: 5px;"> Valoración: 8.4</img>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="aventura" class="genero">
+            <h2>Aventura <img style="width:40px; height:40px" src="img/adventurer.png"></h2>
+            <div id="img4" class="movie">
+                <img src="img/peli1.webp" style="width: 180px; height: 230px;">
+                <div>
+                    <h3>El Bueno, el Malo y el Feo </h3>
+                    <h4>1966</h4>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit fugit veritatis exercitationem ducimus incidunt. Aspernatur nulla quaerat praesentium culpa? Repellendus recusandae ullam maxime ipsa magnam ea totam dolorum voluptate non fuga quasi quod voluptatibus cum aliquid illum sint laboriosam a atque, minus aspernatur explicabo fugiat tempora? Debitis quo illo cumque aut ratione odio minus, facere dolorem! Unde esse ex cum saepe voluptatum fugit, expedita architecto quae dolorem modi? Dolores, autem?</p>
+                    <h5><img src="img/favorito.png" style="width:17px; height:17px;padding-top: 5px; color: #aacaeb;"> Valoración: 9.3</h5>
+                </div>
+            </div>
+            <div id="img5" class="movie">
+                <img src="img/peli2.jpg" style="width: 180px; height: 230px;">
+                <div>
+                    <h3>Mad Max </h3>
+                    <h4>1978</h4>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Illo reprehenderit ipsum quibusdam optio odio aliquam ex sapiente quaerat dolor veniam exercitationem ea cumque repudiandae enim aperiam suscipit animi doloribus, corporis nesciunt ducimus rem labore distinctio fuga. Rem obcaecati officiis enim corrupti accusamus quas facilis iste maiores harum mollitia sunt illo iure nemo voluptates culpa nam aut dolores, earum alias aliquid. Rem assumenda sapiente dolores ipsa ullam unde deserunt molestiae placeat.</p>
+                    <h5><img src="img/favorito.png" style="width:17px; height:17px;padding-top: 5px; color: #aacaeb;"> Valoración: 8.7</h5>
+                </div>
+            </div>
+            <div id="img6" class="movie">
+                <img src="img/peli3.jpeg" style="width: 180px; height: 230px;">
+                <div>
+                    <h3>Indiana Jones </h3>
+                    <h4>1981</h4>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Doloremque ex explicabo vel magnam quo dolorum nostrum, nam recusandae, autem maxime, error consequuntur nulla ipsam aut totam molestias vitae ipsum repellendus. Quo, doloribus. Placeat sapiente, aspernatur dolor dolorum dolore ducimus, illum rem, aliquid quisquam ipsum veniam officiis delectus adipisci deserunt. Odio, tempore assumenda optio accusamus quis culpa suscipit. Magnam est nihil officia fugit deserunt similique debitis. Voluptatum commodi obcaecati numquam recusandae!</p>
+                    <h5><img src="img/favorito.png" style="width:17px; height:17px;padding-top: 5px; color: #aacaeb;"> Valoración: 8.6</h5>
+                </div>
+            </div>
+            <button id="ver2" class="btn">Ver Más</button>
+            <button id="esconder2" class="btn">Ver Menos</button>
+            <div id="hide2" style="display: none;">
+                <div class="movie">
+                    <img src="img/peli4.jpeg" style="width: 180px; height: 230px;">
+                    <div>
+                        <h3>Los Goonies </h3>
+                        <h4>1985</h4>
+                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ut dolor eius placeat quod fuga fugit eum repudiandae minus nesciunt, ab consequatur. Obcaecati amet neque corrupti suscipit facilis, quisquam voluptatem dicta dolor consectetur. Sapiente voluptatem commodi vero, hic officia assumenda necessitatibus, totam sunt veritatis temporibus ab, ex iste corporis. Excepturi, aspernatur. Odit eligendi sunt minus sequi? Alias, aliquam sint cupiditate sit amet exercitationem, harum odio, corporis impedit eum eaque placeat distinctio!</p>
+                        <h5><img src="img/favorito.png" style="width:17px; height:17px;padding-top: 5px; color: #aacaeb;"> Valoración: 8.2</h5>
+                    </div>
+                </div>
+                <div class="movie">
+                    <img src="img/peli5.jpg" style="width: 180px; height: 230px;">
+                    <div>
+                        <h3>Back to the Future </h3>
+                        <h4>1985</h4>
+                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ut dolor eius placeat quod fuga fugit eum repudiandae minus nesciunt, ab consequatur. Obcaecati amet neque corrupti suscipit facilis, quisquam voluptatem dicta dolor consectetur. Sapiente voluptatem commodi vero, hic officia assumenda necessitatibus, totam sunt veritatis temporibus ab, ex iste corporis. Excepturi, aspernatur. Odit eligendi sunt minus sequi? Alias, aliquam sint cupiditate sit amet exercitationem, harum odio, corporis impedit eum eaque placeat distinctio!</p>
+                        <h5><img src="img/favorito.png" style="width:17px; height:17px;padding-top: 5px; color: #aacaeb;"> Valoración: 8.7</h5>
+                    </div>
+                </div>
+                <div class="movie">
+                    <img src="img/peli6.webp" style="width: 180px; height: 230px;">
+                    <div>
+                        <h3>Aliens </h3>
+                        <h4>1986</h4>
+                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ut dolor eius placeat quod fuga fugit eum repudiandae minus nesciunt, ab consequatur. Obcaecati amet neque corrupti suscipit facilis, quisquam voluptatem dicta dolor consectetur. Sapiente voluptatem commodi vero, hic officia assumenda necessitatibus, totam sunt veritatis temporibus ab, ex iste corporis. Excepturi, aspernatur. Odit eligendi sunt minus sequi? Alias, aliquam sint cupiditate sit amet exercitationem, harum odio, corporis impedit eum eaque placeat distinctio!</p>
+                        <h5><img src="img/favorito.png" style="width:17px; height:17px;padding-top: 5px; color: #aacaeb;"> Valoración: 8.5</h5>
+                    </div>
+                </div>
+                <div class="movie">
+                    <img src="img/peli7.jpg" style="width: 180px; height: 230px;">
+                    <div>
+                        <h3>Piratas del Caribe </h3>
+                        <h4>2003</h4>
+                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ut dolor eius placeat quod fuga fugit eum repudiandae minus nesciunt, ab consequatur. Obcaecati amet neque corrupti suscipit facilis, quisquam voluptatem dicta dolor consectetur. Sapiente voluptatem commodi vero, hic officia assumenda necessitatibus, totam sunt veritatis temporibus ab, ex iste corporis. Excepturi, aspernatur. Odit eligendi sunt minus sequi? Alias, aliquam sint cupiditate sit amet exercitationem, harum odio, corporis impedit eum eaque placeat distinctio!</p>
+                        <h5><img src="img/favorito.png" style="width:17px; height:17px;padding-top: 5px; color: #aacaeb;"> Valoración: 8.7</h5>
+                    </div>
+                </div>
+                <div class="movie">
+                    <img src="img/peli8.jpg" style="width: 180px; height: 230px;">
+                    <div>
+                        <h3>Corazón Valiente </h3>
+                        <h4>1995</h4>
+                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ut dolor eius placeat quod fuga fugit eum repudiandae minus nesciunt, ab consequatur. Obcaecati amet neque corrupti suscipit facilis, quisquam voluptatem dicta dolor consectetur. Sapiente voluptatem commodi vero, hic officia assumenda necessitatibus, totam sunt veritatis temporibus ab, ex iste corporis. Excepturi, aspernatur. Odit eligendi sunt minus sequi? Alias, aliquam sint cupiditate sit amet exercitationem, harum odio, corporis impedit eum eaque placeat distinctio!</p>
+                        <h5><img src="img/favorito.png" style="width:17px; height:17px;padding-top: 5px; color: #aacaeb;"> Valoración: 8.9</h5>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="scifi" class="genero">
+            <h2>Sci-Fi <img style="width:52px; height:40px" src="img/ufo.png"></h2>
+            <div id="img7" class="movie">
+                <img src="img/peli9.jpg" style="width: 180px; height: 230px;">
+                <div>
+                    <h3>Star Wars </h3>
+                    <h4>1978</h4>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ut dolor eius placeat quod fuga fugit eum repudiandae minus nesciunt, ab consequatur. Obcaecati amet neque corrupti suscipit facilis, quisquam voluptatem dicta dolor consectetur. Sapiente voluptatem commodi vero, hic officia assumenda necessitatibus, totam sunt veritatis temporibus ab, ex iste corporis. Excepturi, aspernatur. Odit eligendi sunt minus sequi? Alias, aliquam sint cupiditate sit amet exercitationem, harum odio, corporis impedit eum eaque placeat distinctio!</p>
+                    <h5><img src="img/favorito.png" style="width:17px; height:17px;padding-top: 5px;"> Valoración: 8.7</h5>
+                </div>
+            </div>
+            <div id="img8" class="movie">
+                <img src="img/peli10.jpg" style="width: 180px; height: 230px;">
+                <div>
+                    <h3>Hulk </h3>
+                    <h4>2003</h4>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ut dolor eius placeat quod fuga fugit eum repudiandae minus nesciunt, ab consequatur. Obcaecati amet neque corrupti suscipit facilis, quisquam voluptatem dicta dolor consectetur. Sapiente voluptatem commodi vero, hic officia assumenda necessitatibus, totam sunt veritatis temporibus ab, ex iste corporis. Excepturi, aspernatur. Odit eligendi sunt minus sequi? Alias, aliquam sint cupiditate sit amet exercitationem, harum odio, corporis impedit eum eaque placeat distinctio!</p>
+                    <h5><img src="img/favorito.png" style="width:17px; height:17px;padding-top: 5px;"> Valoración: 7.3</h5>
+                </div>
+            </div>
+            <div id="img9" class="movie">
+                <img src="img/peli11.jpg" style="width: 180px; height: 230px;">
+                <div>
+                    <h3>Resident Evil </h3>
+                    <h4>2002</h4>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ut dolor eius placeat quod fuga fugit eum repudiandae minus nesciunt, ab consequatur. Obcaecati amet neque corrupti suscipit facilis, quisquam voluptatem dicta dolor consectetur. Sapiente voluptatem commodi vero, hic officia assumenda necessitatibus, totam sunt veritatis temporibus ab, ex iste corporis. Excepturi, aspernatur. Odit eligendi sunt minus sequi? Alias, aliquam sint cupiditate sit amet exercitationem, harum odio, corporis impedit eum eaque placeat distinctio!</p>
+                    <h5><img src="img/favorito.png" style="width:17px; height:17px;padding-top: 5px;"> Valoración: 7.9</h5>
+                </div>
+            </div>
+            <button id="ver3" class="btn">Ver Más</button>
+            <button id="esconder3" class="btn">Ver Menos</button>
+            <div id="hide3" style="display: none;">
+                <div class="movie">
+                    <img src="img/pelis12.webp" style="width: 180px; height: 230px;">
+                    <div>
+                        <h3>La Naranja Mecánica </h3>
+                        <h4>1971</h4>
+                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ut dolor eius placeat quod fuga fugit eum repudiandae minus nesciunt, ab consequatur. Obcaecati amet neque corrupti suscipit facilis, quisquam voluptatem dicta dolor consectetur. Sapiente voluptatem commodi vero, hic officia assumenda necessitatibus, totam sunt veritatis temporibus ab, ex iste corporis. Excepturi, aspernatur. Odit eligendi sunt minus sequi? Alias, aliquam sint cupiditate sit amet exercitationem, harum odio, corporis impedit eum eaque placeat distinctio!</p>
+                        <h5><img src="img/favorito.png" style="width:17px; height:17px;padding-top: 5px; color: #aacaeb;"> Valoración: 9.2</h5>
+                    </div>
+                </div>
+                <div class="movie">
+                    <img src="img/pelis13.jpg" style="width: 180px; height: 230px;">
+                    <div>
+                        <h3>La Cosa </h3>
+                        <h4>1982</h4>
+                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ut dolor eius placeat quod fuga fugit eum repudiandae minus nesciunt, ab consequatur. Obcaecati amet neque corrupti suscipit facilis, quisquam voluptatem dicta dolor consectetur. Sapiente voluptatem commodi vero, hic officia assumenda necessitatibus, totam sunt veritatis temporibus ab, ex iste corporis. Excepturi, aspernatur. Odit eligendi sunt minus sequi? Alias, aliquam sint cupiditate sit amet exercitationem, harum odio, corporis impedit eum eaque placeat distinctio!</p>
+                        <h5><img src="img/favorito.png" style="width:17px; height:17px;padding-top: 5px; color: #aacaeb;"> Valoración: 8.4</h5>
+                    </div>
+                </div>
+                <div class="movie">
+                    <img src="img/pelis14.jpg" style="width: 180px; height: 230px;">
+                    <div>
+                        <h3>Tron </h3>
+                        <h4>1982</h4>
+                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ut dolor eius placeat quod fuga fugit eum repudiandae minus nesciunt, ab consequatur. Obcaecati amet neque corrupti suscipit facilis, quisquam voluptatem dicta dolor consectetur. Sapiente voluptatem commodi vero, hic officia assumenda necessitatibus, totam sunt veritatis temporibus ab, ex iste corporis. Excepturi, aspernatur. Odit eligendi sunt minus sequi? Alias, aliquam sint cupiditate sit amet exercitationem, harum odio, corporis impedit eum eaque placeat distinctio!</p>
+                        <h5><img src="img/favorito.png" style="width:17px; height:17px;padding-top: 5px; color: #aacaeb;"> Valoración: 8.6</h5>
+                    </div>
+                </div>
+                <div class="movie">
+                    <img src="img/pelis15.jpg" style="width: 180px; height: 230px;">
+                    <div>
+                        <h3>12 Monos </h3>
+                        <h4>1995</h4>
+                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ut dolor eius placeat quod fuga fugit eum repudiandae minus nesciunt, ab consequatur. Obcaecati amet neque corrupti suscipit facilis, quisquam voluptatem dicta dolor consectetur. Sapiente voluptatem commodi vero, hic officia assumenda necessitatibus, totam sunt veritatis temporibus ab, ex iste corporis. Excepturi, aspernatur. Odit eligendi sunt minus sequi? Alias, aliquam sint cupiditate sit amet exercitationem, harum odio, corporis impedit eum eaque placeat distinctio!</p>
+                        <h5><img src="img/favorito.png" style="width:17px; height:17px;padding-top: 5px; color: #aacaeb;"> Valoración: 8.8</h5>
+                    </div>
+                </div>
+                <div class="movie">
+                    <img src="img/pelis16.jpg" style="width: 180px; height: 230px;">
+                    <div>
+                        <h3>Ex-Machina </h3>
+                        <h4>2014</h4>
+                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ut dolor eius placeat quod fuga fugit eum repudiandae minus nesciunt, ab consequatur. Obcaecati amet neque corrupti suscipit facilis, quisquam voluptatem dicta dolor consectetur. Sapiente voluptatem commodi vero, hic officia assumenda necessitatibus, totam sunt veritatis temporibus ab, ex iste corporis. Excepturi, aspernatur. Odit eligendi sunt minus sequi? Alias, aliquam sint cupiditate sit amet exercitationem, harum odio, corporis impedit eum eaque placeat distinctio!</p>
+                        <h5><img src="img/favorito.png" style="width:17px; height:17px;padding-top: 5px; color: #aacaeb;"> Valoración: 8.7</h5>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="drama" class="genero">
+            <h2>Drama <img style="width:47px; height:40px" src="img/drama.png"></h2>
+            <div id="img10" class="movie">
+                <img src="img/p17.jpg" style="width: 180px; height: 230px;">
+                <div>
+                    <h3>12 Años de Esclavitud </h3>
+                    <h4>2013</h4>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ut dolor eius placeat quod fuga fugit eum repudiandae minus nesciunt, ab consequatur. Obcaecati amet neque corrupti suscipit facilis, quisquam voluptatem dicta dolor consectetur. Sapiente voluptatem commodi vero, hic officia assumenda necessitatibus, totam sunt veritatis temporibus ab, ex iste corporis. Excepturi, aspernatur. Odit eligendi sunt minus sequi? Alias, aliquam sint cupiditate sit amet exercitationem, harum odio, corporis impedit eum eaque placeat distinctio!</p>
+                    <h5><img src="img/favorito.png" style="width:17px; height:17px;padding-top: 5px;"> Valoración: 9.2</h5>
+                </div>
+            </div>
+            <div id="img11" class="movie">
+                <img src="img/p18.jpg" style="width: 180px; height: 230px;">
+                <div>
+                    <h3>Manchester frente al Mar</h3>
+                    <h4>2016</h4>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ut dolor eius placeat quod fuga fugit eum repudiandae minus nesciunt, ab consequatur. Obcaecati amet neque corrupti suscipit facilis, quisquam voluptatem dicta dolor consectetur. Sapiente voluptatem commodi vero, hic officia assumenda necessitatibus, totam sunt veritatis temporibus ab, ex iste corporis. Excepturi, aspernatur. Odit eligendi sunt minus sequi? Alias, aliquam sint cupiditate sit amet exercitationem, harum odio, corporis impedit eum eaque placeat distinctio!</p>
+                    <h5><img src="img/favorito.png" style="width:17px; height:17px;padding-top: 5px;"> Valoración: 8.5</h5>
+                </div>
+            </div>
+            <div id="img12" class="movie">
+                <img src="img/p19.jpg" style="width: 180px; height: 230px;">
+                <div>
+                    <h3>Call me by Your Name </h3>
+                    <h4>2017</h4>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ut dolor eius placeat quod fuga fugit eum repudiandae minus nesciunt, ab consequatur. Obcaecati amet neque corrupti suscipit facilis, quisquam voluptatem dicta dolor consectetur. Sapiente voluptatem commodi vero, hic officia assumenda necessitatibus, totam sunt veritatis temporibus ab, ex iste corporis. Excepturi, aspernatur. Odit eligendi sunt minus sequi? Alias, aliquam sint cupiditate sit amet exercitationem, harum odio, corporis impedit eum eaque placeat distinctio!</p>
+                    <h5><img src="img/favorito.png" style="width:17px; height:17px;padding-top: 5px;"> Valoración: 8.0</h5>
+                </div>
+            </div>
+            <button id="ver4" class="btn">Ver Más</button>
+            <button id="esconder4" class="btn">Ver Menos</button>
+            <div id="hide4" style="display: none;">
+                <div class="movie">
+                    <img src="img/p20.jpg" style="width: 180px; height: 230px;">
+                    <div>
+                        <h3>Taxi Driver </h3>
+                        <h4>1976e</h4>
+                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ut dolor eius placeat quod fuga fugit eum repudiandae minus nesciunt, ab consequatur. Obcaecati amet neque corrupti suscipit facilis, quisquam voluptatem dicta dolor consectetur. Sapiente voluptatem commodi vero, hic officia assumenda necessitatibus, totam sunt veritatis temporibus ab, ex iste corporis. Excepturi, aspernatur. Odit eligendi sunt minus sequi? Alias, aliquam sint cupiditate sit amet exercitationem, harum odio, corporis impedit eum eaque placeat distinctio!</p>
+                        <h5><img src="img/favorito.png" style="width:17px; height:17px;padding-top: 5px; color: #aacaeb;"> Valoración: 9.3</h5>
+                    </div>
+                </div>
+                <div class="movie">
+                    <img src="img/p21.jpg" style="width: 180px; height: 230px;">
+                    <div>
+                        <h3>Eva al Desnudo </h3>
+                        <h4>1950</h4>
+                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ut dolor eius placeat quod fuga fugit eum repudiandae minus nesciunt, ab consequatur. Obcaecati amet neque corrupti suscipit facilis, quisquam voluptatem dicta dolor consectetur. Sapiente voluptatem commodi vero, hic officia assumenda necessitatibus, totam sunt veritatis temporibus ab, ex iste corporis. Excepturi, aspernatur. Odit eligendi sunt minus sequi? Alias, aliquam sint cupiditate sit amet exercitationem, harum odio, corporis impedit eum eaque placeat distinctio!</p>
+                        <h5><img src="img/favorito.png" style="width:17px; height:17px;padding-top: 5px; color: #aacaeb;"> Valoración: 8.6</h5>
+                    </div>
+                </div>
+                <div class="movie">
+                    <img src="img/p22.jpg" style="width: 180px; height: 230px;">
+                    <div>
+                        <h3>La Forma del Agua </h3>
+                        <h4>2017</h4>
+                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ut dolor eius placeat quod fuga fugit eum repudiandae minus nesciunt, ab consequatur. Obcaecati amet neque corrupti suscipit facilis, quisquam voluptatem dicta dolor consectetur. Sapiente voluptatem commodi vero, hic officia assumenda necessitatibus, totam sunt veritatis temporibus ab, ex iste corporis. Excepturi, aspernatur. Odit eligendi sunt minus sequi? Alias, aliquam sint cupiditate sit amet exercitationem, harum odio, corporis impedit eum eaque placeat distinctio!</p>
+                        <h5><img src="img/favorito.png" style="width:17px; height:17px;padding-top: 5px; color: #aacaeb;"> Valoración: 8.7</h5>
+                    </div>
+                </div>
+                <div class="movie">
+                    <img src="img/p23.jpg" style="width: 180px; height: 230px;">
+                    <div>
+                        <h3>El Padrino </h3>
+                        <h4>1972</h4>
+                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ut dolor eius placeat quod fuga fugit eum repudiandae minus nesciunt, ab consequatur. Obcaecati amet neque corrupti suscipit facilis, quisquam voluptatem dicta dolor consectetur. Sapiente voluptatem commodi vero, hic officia assumenda necessitatibus, totam sunt veritatis temporibus ab, ex iste corporis. Excepturi, aspernatur. Odit eligendi sunt minus sequi? Alias, aliquam sint cupiditate sit amet exercitationem, harum odio, corporis impedit eum eaque placeat distinctio!</p>
+                        <h5><img src="img/favorito.png" style="width:17px; height:17px;padding-top: 5px; color: #aacaeb;"> Valoración: 9.6</h5>
+                    </div>
+                </div>
+                <div class="movie">
+                    <img src="img/p24.jpg" style="width: 180px; height: 230px;">
+                    <div>
+                        <h3>The Fountain </h3>
+                        <h4>2006</h4>
+                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ut dolor eius placeat quod fuga fugit eum repudiandae minus nesciunt, ab consequatur. Obcaecati amet neque corrupti suscipit facilis, quisquam voluptatem dicta dolor consectetur. Sapiente voluptatem commodi vero, hic officia assumenda necessitatibus, totam sunt veritatis temporibus ab, ex iste corporis. Excepturi, aspernatur. Odit eligendi sunt minus sequi? Alias, aliquam sint cupiditate sit amet exercitationem, harum odio, corporis impedit eum eaque placeat distinctio!</p>
+                        <h5><img src="img/favorito.png" style="width:17px; height:17px;padding-top: 5px; color: #aacaeb;"> Valoración: 9.2</h5>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="fantasia" class="genero">
+            <h2>Fantasía <img style="width:46px; height:40px" src="img/unicorn.png"></h2>
+            <div id="img13" class="movie">
+                <img src="img/p25.jpeg" style="width: 180px; height: 230px;">
+                <div>
+                    <h3>Narnia </h3>
+                    <h4>2005</h4>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ut dolor eius placeat quod fuga fugit eum repudiandae minus nesciunt, ab consequatur. Obcaecati amet neque corrupti suscipit facilis, quisquam voluptatem dicta dolor consectetur. Sapiente voluptatem commodi vero, hic officia assumenda necessitatibus, totam sunt veritatis temporibus ab, ex iste corporis. Excepturi, aspernatur. Odit eligendi sunt minus sequi? Alias, aliquam sint cupiditate sit amet exercitationem, harum odio, corporis impedit eum eaque placeat distinctio!</p>
+                    <h5><img src="img/favorito.png" style="width:17px; height:17px;padding-top: 5px;"> Valoración: 8.9</h5>
+                </div>
+            </div>
+            <div id="img14" class="movie">
+                <img src="img/p26.jpeg" style="width: 180px; height: 230px;">
+                <div>
+                    <h3>La Bella y la Bestia </h3>
+                    <h4>2017</h4>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ut dolor eius placeat quod fuga fugit eum repudiandae minus nesciunt, ab consequatur. Obcaecati amet neque corrupti suscipit facilis, quisquam voluptatem dicta dolor consectetur. Sapiente voluptatem commodi vero, hic officia assumenda necessitatibus, totam sunt veritatis temporibus ab, ex iste corporis. Excepturi, aspernatur. Odit eligendi sunt minus sequi? Alias, aliquam sint cupiditate sit amet exercitationem, harum odio, corporis impedit eum eaque placeat distinctio!</p>
+                    <h5><img src="img/favorito.png" style="width:17px; height:17px;padding-top: 5px;"> Valoración: 8.6</h5>
+                </div>
+            </div>
+            <div id="img15" class="movie">
+                <img src="img/p27.jpeg" style="width: 180px; height: 230px;">
+                <div>
+                    <h3>La Historia sin Fin </h3>
+                    <h4>1984</h4>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ut dolor eius placeat quod fuga fugit eum repudiandae minus nesciunt, ab consequatur. Obcaecati amet neque corrupti suscipit facilis, quisquam voluptatem dicta dolor consectetur. Sapiente voluptatem commodi vero, hic officia assumenda necessitatibus, totam sunt veritatis temporibus ab, ex iste corporis. Excepturi, aspernatur. Odit eligendi sunt minus sequi? Alias, aliquam sint cupiditate sit amet exercitationem, harum odio, corporis impedit eum eaque placeat distinctio!</p>
+                    <h5><img src="img/favorito.png" style="width:17px; height:17px;padding-top: 5px;"> Valoración: 8.5</h5>
+                </div>
+            </div>
+            <button id="ver5" class="btn">Ver Más</button>
+            <button id="esconder5" class="btn">Ver Menos</button>
+            <div id="hide5" style="display: none;">
+                <div class="movie">
+                    <img src="img/p28.jpeg" style="width: 180px; height: 230px;">
+                    <div>
+                        <h3>Excálibur </h3>
+                        <h4>1981</h4>
+                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ut dolor eius placeat quod fuga fugit eum repudiandae minus nesciunt, ab consequatur. Obcaecati amet neque corrupti suscipit facilis, quisquam voluptatem dicta dolor consectetur. Sapiente voluptatem commodi vero, hic officia assumenda necessitatibus, totam sunt veritatis temporibus ab, ex iste corporis. Excepturi, aspernatur. Odit eligendi sunt minus sequi? Alias, aliquam sint cupiditate sit amet exercitationem, harum odio, corporis impedit eum eaque placeat distinctio!</p>
+                        <h5><img src="img/favorito.png" style="width:17px; height:17px;padding-top: 5px; color: #aacaeb;"> Valoración: 8.4</h5>
+                    </div>
+                </div>
+                <div class="movie">
+                    <img src="img/p29.jpeg" style="width: 180px; height: 230px;">
+                    <div>
+                        <h3>Las Crónicas de Spiderwick </h3>
+                        <h4>2008</h4>
+                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ut dolor eius placeat quod fuga fugit eum repudiandae minus nesciunt, ab consequatur. Obcaecati amet neque corrupti suscipit facilis, quisquam voluptatem dicta dolor consectetur. Sapiente voluptatem commodi vero, hic officia assumenda necessitatibus, totam sunt veritatis temporibus ab, ex iste corporis. Excepturi, aspernatur. Odit eligendi sunt minus sequi? Alias, aliquam sint cupiditate sit amet exercitationem, harum odio, corporis impedit eum eaque placeat distinctio!</p>
+                        <h5><img src="img/favorito.png" style="width:17px; height:17px;padding-top: 5px; color: #aacaeb;"> Valoración: 8.5</h5>
+                    </div>
+                </div>
+                <div class="movie">
+                    <img src="img/p30.jpeg" style="width: 180px; height: 230px;">
+                    <div>
+                        <h3>Harry Potter y el Cáliz de Fuego </h3>
+                        <h4>2005</h4>
+                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ut dolor eius placeat quod fuga fugit eum repudiandae minus nesciunt, ab consequatur. Obcaecati amet neque corrupti suscipit facilis, quisquam voluptatem dicta dolor consectetur. Sapiente voluptatem commodi vero, hic officia assumenda necessitatibus, totam sunt veritatis temporibus ab, ex iste corporis. Excepturi, aspernatur. Odit eligendi sunt minus sequi? Alias, aliquam sint cupiditate sit amet exercitationem, harum odio, corporis impedit eum eaque placeat distinctio!</p>
+                        <h5><img src="img/favorito.png" style="width:17px; height:17px;padding-top: 5px; color: #aacaeb;"> Valoración: 8.7</h5>
+                    </div>
+                </div>
+                <div class="movie">
+                    <img src="img/p31.webp" style="width: 180px; height: 230px;">
+                    <div>
+                        <h3>Charlie y la Fábrica de Chocolate </h3>
+                        <h4>2005</h4>
+                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ut dolor eius placeat quod fuga fugit eum repudiandae minus nesciunt, ab consequatur. Obcaecati amet neque corrupti suscipit facilis, quisquam voluptatem dicta dolor consectetur. Sapiente voluptatem commodi vero, hic officia assumenda necessitatibus, totam sunt veritatis temporibus ab, ex iste corporis. Excepturi, aspernatur. Odit eligendi sunt minus sequi? Alias, aliquam sint cupiditate sit amet exercitationem, harum odio, corporis impedit eum eaque placeat distinctio!</p>
+                        <h5><img src="img/favorito.png" style="width:17px; height:17px;padding-top: 5px; color: #aacaeb;"> Valoración: 8.9</h5>
+                    </div>
+                </div>
+                <div class="movie">
+                    <img src="img/p32.jpeg" style="width: 180px; height: 230px;">
+                    <div>
+                        <h3>Cenicienta </h3>
+                        <h4>2015</h4>
+                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ut dolor eius placeat quod fuga fugit eum repudiandae minus nesciunt, ab consequatur. Obcaecati amet neque corrupti suscipit facilis, quisquam voluptatem dicta dolor consectetur. Sapiente voluptatem commodi vero, hic officia assumenda necessitatibus, totam sunt veritatis temporibus ab, ex iste corporis. Excepturi, aspernatur. Odit eligendi sunt minus sequi? Alias, aliquam sint cupiditate sit amet exercitationem, harum odio, corporis impedit eum eaque placeat distinctio!</p>
+                        <h5><img src="img/favorito.png" style="width:17px; height:17px;padding-top: 5px; color: #aacaeb;"> Valoración: 8.3</h5>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <div id="espacio" class="genero">
+            <h2>Espacio <img style="width:43px; height:40px" src="img/saturn.png"></h2>
+            <div id="img16" class="movie">
+                <img src="img/p41.jpeg" style="width: 180px; height: 230px;">
+                <div>
+                    <h3>Interestellar </h3>
+                    <h4>2014</h4>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolor aut expedita totam exercitationem deleniti maxime? Itaque, facilis? Doloribus non nobis quisquam delectus eveniet labore cupiditate maiores esse officiis? Delectus aut ipsa eum hic officia nostrum, enim, quaerat quae corporis, sit nisi? Ab expedita unde nulla ipsa et placeat, fugiat temporibus quisquam a culpa exercitationem nesciunt? Voluptas dolore unde ab nam, cum, et velit iure provident fugit similique tempora. Culpa, consequatur!</p>
+                    <h5><img src="img/favorito.png" style="width:17px; height:17px;padding-top: 5px;"> Valoración: 9.3</h5>
+                </div>
+            </div>
+            <div id="img17" class="movie">
+                <img src="img/p42.jpeg" style="width: 180px; height: 230px;">
+                <div>
+                    <h3>Apolo 13 </h3>
+                    <h4>1995</h4>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Reiciendis optio suscipit dolorum architecto aliquam nobis, saepe totam, quisquam libero, aliquid dolores tenetur. Deleniti neque reiciendis beatae minima quidem doloremque voluptatum numquam eum nisi animi quae at nostrum suscipit libero, nam aspernatur minus inventore omnis maiores officia doloribus. At enim autem accusamus, modi non exercitationem quia, vitae quae error, distinctio placeat consectetur nostrum blanditiis quos dignissimos? Fuga fugit id doloremque nisi dolores recusandae possimus molestias exercitationem? Magnam, dolorum quibusdam.</p>
+                    <h5><img src="img/favorito.png" style="width:17px; height:17px;padding-top: 5px;"> Valoración: 8.5</h5>
+                </div>
+            </div>
+            <div id="img18" class="movie">
+                <img src="img/p43.jpeg" style="width: 180px; height: 230px;">
+                <div>
+                    <h3>Gravity </h3>
+                    <h4>2013</h4>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Adipisci, earum, doloribus, voluptate voluptates aut cumque quas in praesentium voluptatibus suscipit culpa tempore? Culpa illum est id, temporibus hic quod deleniti assumenda tenetur delectus mollitia nisi ipsam incidunt amet maiores consequuntur, eligendi sint cumque cum quaerat laudantium corporis doloribus labore nostrum quasi. Commodi nostrum at minima voluptates optio provident eligendi, voluptatibus iusto similique saepe deserunt veritatis doloribus, quaerat odit esse dignissimos aliquam iure id unde placeat eaque est nam corporis! Minus.</p>
+                    <h5><img src="img/favorito.png" style="width:17px; height:17px;padding-top: 5px;"> Valoración: 8.8</h5>
+                </div>
+            </div>
+            <button id="ver6" class="btn">Ver Más</button>
+            <button id="esconder6" class="btn">Ver Menos</button>
+            <div id="hide6" style="display: none;">
+                <div class="movie">
+                    <img src="img/p44.jpeg" style="width: 180px; height: 230px;">
+                    <div>
+                        <h3>Solaris </h3>
+                        <h4>2002</h4>
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Officiis possimus aut iste? Aliquam voluptatem delectus, asperiores aspernatur at neque eveniet voluptatum ipsam. Placeat sapiente ratione rerum, natus assumenda magnam rem eaque blanditiis! Maxime itaque, repellendus distinctio dicta quod quaerat asperiores facilis laborum natus molestias expedita maiores nisi recusandae soluta unde suscipit voluptatem, accusamus error ipsam earum aut dolor voluptates non. Ex aliquid facilis sed quod optio! Sed fuga impedit eaque fugiat eligendi enim aliquam porro, eveniet iusto voluptatem ad optio.</p>
+                        <h5><img src="img/favorito.png" style="width:17px; height:17px;padding-top: 5px; color: #aacaeb;"> Valoración: 8.5</h5>
+                    </div>
+                </div>
+                <div class="movie">
+                    <img src="img/p45.jpeg" style="width: 180px; height: 230px;">
+                    <div>
+                        <h3>Pandorum </h3>
+                        <h4>2009</h4>
+                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ut dolor eius placeat quod fuga fugit eum repudiandae minus nesciunt, ab consequatur. Obcaecati amet neque corrupti suscipit facilis, quisquam voluptatem dicta dolor consectetur. Sapiente voluptatem commodi vero, hic officia assumenda necessitatibus, totam sunt veritatis temporibus ab, ex iste corporis. Excepturi, aspernatur. Odit eligendi sunt minus sequi? Alias, aliquam sint cupiditate sit amet exercitationem, harum odio, corporis impedit eum eaque placeat distinctio!</p>
+                        <h5><img src="img/favorito.png" style="width:17px; height:17px;padding-top: 5px; color: #aacaeb;"> Valoración: 8.2</h5>
+                    </div>
+                </div>
+                <div class="movie">
+                    <img src="img/p46.jpeg" style="width: 180px; height: 230px;">
+                    <div>
+                        <h3>Aniara </h3>
+                        <h4>2018</h4>
+                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ut dolor eius placeat quod fuga fugit eum repudiandae minus nesciunt, ab consequatur. Obcaecati amet neque corrupti suscipit facilis, quisquam voluptatem dicta dolor consectetur. Sapiente voluptatem commodi vero, hic officia assumenda necessitatibus, totam sunt veritatis temporibus ab, ex iste corporis. Excepturi, aspernatur. Odit eligendi sunt minus sequi? Alias, aliquam sint cupiditate sit amet exercitationem, harum odio, corporis impedit eum eaque placeat distinctio!</p>
+                        <h5><img src="img/favorito.png" style="width:17px; height:17px;padding-top: 5px; color: #aacaeb;"> Valoración: 8.1</h5>
+                    </div>
+                </div>
+                <div class="movie">
+                    <img src="img/p47.jpeg" style="width: 180px; height: 230px;">
+                    <div>
+                        <h3>2001: Odisea en el Espacio </h3>
+                        <h4>1968</h4>
+                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ut dolor eius placeat quod fuga fugit eum repudiandae minus nesciunt, ab consequatur. Obcaecati amet neque corrupti suscipit facilis, quisquam voluptatem dicta dolor consectetur. Sapiente voluptatem commodi vero, hic officia assumenda necessitatibus, totam sunt veritatis temporibus ab, ex iste corporis. Excepturi, aspernatur. Odit eligendi sunt minus sequi? Alias, aliquam sint cupiditate sit amet exercitationem, harum odio, corporis impedit eum eaque placeat distinctio!</p>
+                        <h5><img src="img/favorito.png" style="width:17px; height:17px;padding-top: 5px; color: #aacaeb;"> Valoración: 9.2</h5>
+                    </div>
+                </div>
+                <div class="movie">
+                    <img src="img/p48.jpeg" style="width: 180px; height: 230px;">
+                    <div>
+                        <h3>Gattaca </h3>
+                        <h4>1997</h4>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus impedit ullam officiis eius consequuntur, architecto mollitia nam, alias ut sunt cupiditate eos explicabo commodi minus rem assumenda quasi illum dolorum deserunt maiores eum. Adipisci fugit sit debitis quasi aperiam, nisi explicabo praesentium amet cumque impedit facilis est saepe mollitia quidem et molestiae. Quae sint quos iure, iste aut non id quam nemo eveniet excepturi fugiat minus deserunt omnis hic minima?</p>
+                        <h5><img src="img/favorito.png" style="width:17px; height:17px;padding-top: 5px; color: #aacaeb;"> Valoración: 8.6</h5>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="terror" class="genero">
+            <h2>Terror <img style="width:45px; height:40px" src="img/spooky.png"></h2>
+            <div id="img19" class="movie">
+                <img src="img/p49.jpeg" style="width: 180px; height: 230px;">
+                <div>
+                    <h3>El Resplandor </h3>
+                    <h4>1980</h4>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ut dolor eius placeat quod fuga fugit eum repudiandae minus nesciunt, ab consequatur. Obcaecati amet neque corrupti suscipit facilis, quisquam voluptatem dicta dolor consectetur. Sapiente voluptatem commodi vero, hic officia assumenda necessitatibus, totam sunt veritatis temporibus ab, ex iste corporis. Excepturi, aspernatur. Odit eligendi sunt minus sequi? Alias, aliquam sint cupiditate sit amet exercitationem, harum odio, corporis impedit eum eaque placeat distinctio!</p>
+                    <h5><img src="img/favorito.png" style="width:17px; height:17px;padding-top: 5px;"> Valoración: 9.1</h5>
+                </div>
+            </div>
+            <div id="img20" class="movie">
+                <img src="img/p50.jpeg" style="width: 180px; height: 230px;">
+                <div>
+                    <h3>Halloween </h3>
+                    <h4>1978</h4>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ut dolor eius placeat quod fuga fugit eum repudiandae minus nesciunt, ab consequatur. Obcaecati amet neque corrupti suscipit facilis, quisquam voluptatem dicta dolor consectetur. Sapiente voluptatem commodi vero, hic officia assumenda necessitatibus, totam sunt veritatis temporibus ab, ex iste corporis. Excepturi, aspernatur. Odit eligendi sunt minus sequi? Alias, aliquam sint cupiditate sit amet exercitationem, harum odio, corporis impedit eum eaque placeat distinctio!</p>
+                    <h5><img src="img/favorito.png" style="width:17px; height:17px;padding-top: 5px;"> Valoración: 8.2</h5>
+                </div>
+            </div>
+            <div id="img21" class="movie">
+                <img src="img/p51.webp" style="width: 180px; height: 230px;">
+                <div>
+                    <h3>Psicosis </h3>
+                    <h4>1960</h4>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ut dolor eius placeat quod fuga fugit eum repudiandae minus nesciunt, ab consequatur. Obcaecati amet neque corrupti suscipit facilis, quisquam voluptatem dicta dolor consectetur. Sapiente voluptatem commodi vero, hic officia assumenda necessitatibus, totam sunt veritatis temporibus ab, ex iste corporis. Excepturi, aspernatur. Odit eligendi sunt minus sequi? Alias, aliquam sint cupiditate sit amet exercitationem, harum odio, corporis impedit eum eaque placeat distinctio!</p>
+                    <h5><img src="img/favorito.png" style="width:17px; height:17px;padding-top: 5px;"> Valoración: 9.2</h5>
+                </div>
+            </div>
+            <button id="ver7" class="btn">Ver Más</button>
+            <button id="esconder7" class="btn">Ver Menos</button>
+            <div id="hide7" style="display: none;">
+                <div class="movie">
+                    <img src="img/p52.jpeg" style="width: 180px; height: 230px;">
+                    <div>
+                        <h3>Masacre en Texas </h3>
+                        <h4>1974</h4>
+                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ut dolor eius placeat quod fuga fugit eum repudiandae minus nesciunt, ab consequatur. Obcaecati amet neque corrupti suscipit facilis, quisquam voluptatem dicta dolor consectetur. Sapiente voluptatem commodi vero, hic officia assumenda necessitatibus, totam sunt veritatis temporibus ab, ex iste corporis. Excepturi, aspernatur. Odit eligendi sunt minus sequi? Alias, aliquam sint cupiditate sit amet exercitationem, harum odio, corporis impedit eum eaque placeat distinctio!</p>
+                        <h5><img src="img/favorito.png" style="width:17px; height:17px;padding-top: 5px; color: #aacaeb;"> Valoración: 8.2</h5>
+                    </div>
+                </div>
+                <div class="movie">
+                    <img src="img/p53.webp" style="width: 180px; height: 230px;">
+                    <div>
+                        <h3>Scream </h3>
+                        <h4>1996</h4>
+                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ut dolor eius placeat quod fuga fugit eum repudiandae minus nesciunt, ab consequatur. Obcaecati amet neque corrupti suscipit facilis, quisquam voluptatem dicta dolor consectetur. Sapiente voluptatem commodi vero, hic officia assumenda necessitatibus, totam sunt veritatis temporibus ab, ex iste corporis. Excepturi, aspernatur. Odit eligendi sunt minus sequi? Alias, aliquam sint cupiditate sit amet exercitationem, harum odio, corporis impedit eum eaque placeat distinctio!</p>
+                        <h5><img src="img/favorito.png" style="width:17px; height:17px;padding-top: 5px; color: #aacaeb;"> Valoración: 8.5</h5>
+                    </div>
+                </div>
+                <div class="movie">
+                    <img src="img/p54.jpeg" style="width: 180px; height: 230px;">
+                    <div>
+                        <h3>Pesadilla en la Calle Elm </h3>
+                        <h4>1984</h4>
+                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ut dolor eius placeat quod fuga fugit eum repudiandae minus nesciunt, ab consequatur. Obcaecati amet neque corrupti suscipit facilis, quisquam voluptatem dicta dolor consectetur. Sapiente voluptatem commodi vero, hic officia assumenda necessitatibus, totam sunt veritatis temporibus ab, ex iste corporis. Excepturi, aspernatur. Odit eligendi sunt minus sequi? Alias, aliquam sint cupiditate sit amet exercitationem, harum odio, corporis impedit eum eaque placeat distinctio!</p>
+                        <h5><img src="img/favorito.png" style="width:17px; height:17px;padding-top: 5px; color: #aacaeb;"> Valoración: 8.9</h5>
+                    </div>
+                </div>
+                <div class="movie">
+                    <img src="img/p55.jpeg" style="width: 180px; height: 230px;">
+                    <div>
+                        <h3>El Doctor Frankenstein </h3>
+                        <h4>1931</h4>
+                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ut dolor eius placeat quod fuga fugit eum repudiandae minus nesciunt, ab consequatur. Obcaecati amet neque corrupti suscipit facilis, quisquam voluptatem dicta dolor consectetur. Sapiente voluptatem commodi vero, hic officia assumenda necessitatibus, totam sunt veritatis temporibus ab, ex iste corporis. Excepturi, aspernatur. Odit eligendi sunt minus sequi? Alias, aliquam sint cupiditate sit amet exercitationem, harum odio, corporis impedit eum eaque placeat distinctio!</p>
+                        <h5><img src="img/favorito.png" style="width:17px; height:17px;padding-top: 5px; color: #aacaeb;"> Valoración: 8.7</h5>
+                    </div>
+                </div>
+                <div class="movie">
+                    <img src="img/p56.jpeg" style="width: 180px; height: 230px;">
+                    <div>
+                        <h3>Babadook </h3>
+                        <h4>2014</h4>
+                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ut dolor eius placeat quod fuga fugit eum repudiandae minus nesciunt, ab consequatur. Obcaecati amet neque corrupti suscipit facilis, quisquam voluptatem dicta dolor consectetur. Sapiente voluptatem commodi vero, hic officia assumenda necessitatibus, totam sunt veritatis temporibus ab, ex iste corporis. Excepturi, aspernatur. Odit eligendi sunt minus sequi? Alias, aliquam sint cupiditate sit amet exercitationem, harum odio, corporis impedit eum eaque placeat distinctio!</p>
+                        <h5><img src="img/favorito.png" style="width:17px; height:17px;padding-top: 5px; color: #aacaeb;"> Valoración: 8.4</h5>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="romance" class="genero">
+            <h2>Romance <img style="width:42px; height:40px" src="img/love-and-romance.png"></h2>
+            <div id="img22" class="movie">
+                <img src="img/p57.jpeg" style="width: 180px; height: 230px;">
+                <div>
+                    <h3>Titanic </h3>
+                    <h4>1998</h4>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ut dolor eius placeat quod fuga fugit eum repudiandae minus nesciunt, ab consequatur. Obcaecati amet neque corrupti suscipit facilis, quisquam voluptatem dicta dolor consectetur. Sapiente voluptatem commodi vero, hic officia assumenda necessitatibus, totam sunt veritatis temporibus ab, ex iste corporis. Excepturi, aspernatur. Odit eligendi sunt minus sequi? Alias, aliquam sint cupiditate sit amet exercitationem, harum odio, corporis impedit eum eaque placeat distinctio!</p>
+                    <h5><img src="img/favorito.png" style="width:17px; height:17px;padding-top: 5px; color: #aacaeb;"> Valoración: 9.0</h5>
+                </div>
+            </div>
+            <div id="img23" class="movie">
+                <img src="img/p58.jpeg" style="width: 180px; height: 230px;">
+                <div>
+                    <h3>El Diario de Noah </h3>
+                    <h4>2004</h4>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ut dolor eius placeat quod fuga fugit eum repudiandae minus nesciunt, ab consequatur. Obcaecati amet neque corrupti suscipit facilis, quisquam voluptatem dicta dolor consectetur. Sapiente voluptatem commodi vero, hic officia assumenda necessitatibus, totam sunt veritatis temporibus ab, ex iste corporis. Excepturi, aspernatur. Odit eligendi sunt minus sequi? Alias, aliquam sint cupiditate sit amet exercitationem, harum odio, corporis impedit eum eaque placeat distinctio!</p>
+                    <h5><img src="img/favorito.png" style="width:17px; height:17px;padding-top: 5px; color: #aacaeb;"> Valoración: 8.4</h5>
+                </div>
+            </div>
+            <div id="img24" class="movie">
+                <img src="img/p59.jpeg" style="width: 180px; height: 230px;">
+                <div>
+                    <h3>Casablanca </h3>
+                    <h4>1942</h4>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ut dolor eius placeat quod fuga fugit eum repudiandae minus nesciunt, ab consequatur. Obcaecati amet neque corrupti suscipit facilis, quisquam voluptatem dicta dolor consectetur. Sapiente voluptatem commodi vero, hic officia assumenda necessitatibus, totam sunt veritatis temporibus ab, ex iste corporis. Excepturi, aspernatur. Odit eligendi sunt minus sequi? Alias, aliquam sint cupiditate sit amet exercitationem, harum odio, corporis impedit eum eaque placeat distinctio!</p>
+                    <h5><img src="img/favorito.png" style="width:17px; height:17px;padding-top: 5px; color: #aacaeb;"> Valoración: 9.5</h5>
+                </div>
+            </div>
+            <button id="ver8" class="btn">Ver Más</button>
+            <button id="esconder8" class="btn">Ver Menos</button>
+            <div id="hide8" style="display: none;">
+                <div class="movie">
+                    <img src="img/p60.jpeg" style="width: 180px; height: 230px;">
+                    <div>
+                        <h3>Juno </h3>
+                        <h4>2007</h4>
+                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ut dolor eius placeat quod fuga fugit eum repudiandae minus nesciunt, ab consequatur. Obcaecati amet neque corrupti suscipit facilis, quisquam voluptatem dicta dolor consectetur. Sapiente voluptatem commodi vero, hic officia assumenda necessitatibus, totam sunt veritatis temporibus ab, ex iste corporis. Excepturi, aspernatur. Odit eligendi sunt minus sequi? Alias, aliquam sint cupiditate sit amet exercitationem, harum odio, corporis impedit eum eaque placeat distinctio!</p>
+                        <h5><img src="img/favorito.png" style="width:17px; height:17px;padding-top: 5px; color: #aacaeb;"> Valoración: 8.7</h5>
+                    </div>
+                </div>
+                <div class="movie">
+                    <img src="img/p61.jpeg" style="width: 180px; height: 230px;">
+                    <div>
+                        <h3>Her </h3>
+                        <h4>2013</h4>
+                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ut dolor eius placeat quod fuga fugit eum repudiandae minus nesciunt, ab consequatur. Obcaecati amet neque corrupti suscipit facilis, quisquam voluptatem dicta dolor consectetur. Sapiente voluptatem commodi vero, hic officia assumenda necessitatibus, totam sunt veritatis temporibus ab, ex iste corporis. Excepturi, aspernatur. Odit eligendi sunt minus sequi? Alias, aliquam sint cupiditate sit amet exercitationem, harum odio, corporis impedit eum eaque placeat distinctio!</p>
+                        <h5><img src="img/favorito.png" style="width:17px; height:17px;padding-top: 5px; color: #aacaeb;"> Valoración: 8.8</h5>
+                    </div>
+                </div>
+                <div class="movie">
+                    <img src="img/p62.jpeg" style="width: 180px; height: 230px;">
+                    <div>
+                        <h3>Deseando Amar </h3>
+                        <h4>2000</h4>
+                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ut dolor eius placeat quod fuga fugit eum repudiandae minus nesciunt, ab consequatur. Obcaecati amet neque corrupti suscipit facilis, quisquam voluptatem dicta dolor consectetur. Sapiente voluptatem commodi vero, hic officia assumenda necessitatibus, totam sunt veritatis temporibus ab, ex iste corporis. Excepturi, aspernatur. Odit eligendi sunt minus sequi? Alias, aliquam sint cupiditate sit amet exercitationem, harum odio, corporis impedit eum eaque placeat distinctio!</p>
+                        <h5><img src="img/favorito.png" style="width:17px; height:17px;padding-top: 5px; color: #aacaeb;"> Valoración: 8.5</h5>
+                    </div>
+                </div>
+                <div class="movie">
+                    <img src="img/p63.jpeg" style="width: 180px; height: 230px;">
+                    <div>
+                        <h3>Brokeback Mountain </h3>
+                        <h4>2005</h4>
+                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ut dolor eius placeat quod fuga fugit eum repudiandae minus nesciunt, ab consequatur. Obcaecati amet neque corrupti suscipit facilis, quisquam voluptatem dicta dolor consectetur. Sapiente voluptatem commodi vero, hic officia assumenda necessitatibus, totam sunt veritatis temporibus ab, ex iste corporis. Excepturi, aspernatur. Odit eligendi sunt minus sequi? Alias, aliquam sint cupiditate sit amet exercitationem, harum odio, corporis impedit eum eaque placeat distinctio!</p>
+                        <h5><img src="img/favorito.png" style="width:17px; height:17px;padding-top: 5px; color: #aacaeb;"> Valoración: 8.9</h5>
+                    </div>
+                </div>
+                <div class="movie">
+                    <img src="img/p64.jpeg" style="width: 180px; height: 230px;">
+                    <div>
+                        <h3>Los Puentes de Madison </h3>
+                        <h4>1995</h4>
+                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ut dolor eius placeat quod fuga fugit eum repudiandae minus nesciunt, ab consequatur. Obcaecati amet neque corrupti suscipit facilis, quisquam voluptatem dicta dolor consectetur. Sapiente voluptatem commodi vero, hic officia assumenda necessitatibus, totam sunt veritatis temporibus ab, ex iste corporis. Excepturi, aspernatur. Odit eligendi sunt minus sequi? Alias, aliquam sint cupiditate sit amet exercitationem, harum odio, corporis impedit eum eaque placeat distinctio!</p>
+                        <h5><img src="img/favorito.png" style="width:17px; height:17px;padding-top: 5px; color: #aacaeb;"> Valoración: 8.9</h5>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--Footer-->
+    <footer>
+        <ul>
+            <li><img src="img/twitter.png"></li>
+            <li><img src="img/instagram.png"></li>
+            <li><img src="img/facebook.png"></li>
+            <li><img src="img/youtube.png"></li>
+            <li><img src="img/whatsapp.png"></li>
+        </ul>
+        <h4 id="copy"><img src="img/copy.png" width="12px" height="12px"> 2022 MovieLand. Todos los derechos reservados.</h4>
+    </footer>
+    
+    <!--jQuery-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <!--JavaScript-->
+    <script src="js/index.js"></script>
+</body>
+</html>
