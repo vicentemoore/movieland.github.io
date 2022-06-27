@@ -26,30 +26,30 @@ observador.observe(img10);observador.observe(img11);observador.observe(img12);ob
 // Animación Fade para Textos de Cartelera
 $(document).ready(function(){
     $("#show").click(function(){
-        $(".div1").slideDown(1300);
-        $(".div2").slideDown(1300);
-        $(".div3").slideDown(1300);
-        $(".div4").slideDown(1300);
-        $(".div5").slideDown(1300);
-        $(".div6").slideDown(3000);
-        $(".div7").slideDown(3000);
-        $(".div8").slideDown(3000);
-        $(".div9").slideDown(3000);
-        $(".div10").slideDown(3000);
+        $(".div1").slideDown(1000);
+        $(".div2").slideDown(1000);
+        $(".div3").slideDown(1000);
+        $(".div4").slideDown(1000);
+        $(".div5").slideDown(1000);
+        $(".div6").slideDown(1000);
+        $(".div7").slideDown(1000);
+        $(".div8").slideDown(1000);
+        $(".div9").slideDown(1000);
+        $(".div10").slideDown(1000);
     });
 });
 $(document).ready(function(){
     $("#hide").click(function(){
-        $(".div1").slideUp(1300);
-        $(".div2").slideUp(1300);
-        $(".div3").slideUp(1300);
-        $(".div4").slideUp(1300);
-        $(".div5").slideUp(1300);
+        $(".div1").slideUp(1000);
+        $(".div2").slideUp(1000);
+        $(".div3").slideUp(1000);
+        $(".div4").slideUp(1000);
+        $(".div5").slideUp(1000);
         $(".div6").slideUp(3000);
-        $(".div7").slideUp(3000);
-        $(".div8").slideUp(3000);
-        $(".div9").slideUp(3000);
-        $(".div10").slideUp(3000);
+        $(".div7").slideUp(1000);
+        $(".div8").slideUp(1000);
+        $(".div9").slideUp(1000);
+        $(".div10").slideUp(1000);
     });
 });
 
