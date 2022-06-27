@@ -40,16 +40,16 @@ $(document).ready(function(){
 });
 $(document).ready(function(){
     $("#hide").click(function(){
-        $(".div1").slideUp(400);
-        $(".div2").slideUp(900);
-        $(".div3").slideUp(1400);
-        $(".div4").slideUp(1900);
-        $(".div5").slideUp(2400);
-        $(".div6").slideUp(2900);
-        $(".div7").slideUp(3400);
-        $(".div8").slideUp(3900);
-        $(".div9").slideUp(4400);
-        $(".div10").slideUp(4900);
+        $(".div1").slideUp(1300);
+        $(".div2").slideUp(1300);
+        $(".div3").slideUp(1300);
+        $(".div4").slideUp(1300);
+        $(".div5").slideUp(1300);
+        $(".div6").slideUp(3000);
+        $(".div7").slideUp(3000);
+        $(".div8").slideUp(3000);
+        $(".div9").slideUp(3000);
+        $(".div10").slideUp(3000);
     });
 });
 
