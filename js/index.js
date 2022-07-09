@@ -45,7 +45,7 @@ $(document).ready(function(){
         $(".div3").slideUp(1000);
         $(".div4").slideUp(1000);
         $(".div5").slideUp(1000);
-        $(".div6").slideUp(3000);
+        $(".div6").slideUp(1000);
         $(".div7").slideUp(1000);
         $(".div8").slideUp(1000);
         $(".div9").slideUp(1000);
